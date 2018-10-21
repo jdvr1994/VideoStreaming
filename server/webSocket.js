@@ -1,8 +1,12 @@
 'use strict'
 const config = require('../config')
-
+var fs = require('fs')
+var https = require('https')
 const app = require('./app')
-const server = require('http').Server(app)
+const server = require('https').createServer({
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.cert')
+}, app)
 const io = require('socket.io')(server)
 
 //---------- Web Socket -----------------------
