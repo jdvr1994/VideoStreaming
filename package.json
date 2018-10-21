@@ -1,0 +1,21 @@
+{
+  "name": "videostreaming",
+  "version": "1.0.0",
+  "description": "Video Streaming example with node js Server and Socket IO",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/main.js"
+  },
+  "keywords": [
+    "video"
+  ],
+  "author": "Juan David Velasquez Rosero",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.4",
+    "socket-io": "^1.0.0",
+    "socket.io": "^2.1.1"
+  }
+}
