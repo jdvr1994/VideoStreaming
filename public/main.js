@@ -1,4 +1,4 @@
-var socket = io.connect('https://localhost:3000', { 'forceNew': true });
+var socket = io.connect('https://209.182.218.174:3000', { 'forceNew': true });
 
 socket.on('messages', function(data) {
   console.log(data);
